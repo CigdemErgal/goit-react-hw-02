@@ -9,8 +9,8 @@ import css from "./App.module.css";
 const STROAGE_KEY = "sip-happens-feedback";
 const initialFeedback = { good: 0, neutral: 0, bad: 0 };
 
-//App bileşeni, kullanıcıdan gelen feedback verilerini yönetir
-// ve diğer bileşenlere ileterek uygulamanın ana yapısını oluşturur
+//App bileseni, kullanıcıdan gelen feedback verilerini yönetir
+// ve diger bilesenlere ileterek uygulamanın ana yapısını olusturur
 export default function App() {
   const [feedback, setFeedback] = useState(() => {
     const saved = localStorage.getItem(STROAGE_KEY);
@@ -30,7 +30,7 @@ export default function App() {
       [feedbackType]: prev[feedbackType] + 1,
     }));
   };
-  //resetFeedback fonksiyonu, feedback state'ini başlangıç değerlerine sıfırlamak için kullanılır
+  //resetFeedback fonksiyonu, feedback state'ini baslangıc degerlerine sıfırlamak icin kullanılır
   const resetFeedback = () => setFeedback(initialFeedback);
 
   //toplam feedback sayısını ve olumlu feedback yüzdesini hesaplıyoruz
@@ -38,7 +38,7 @@ export default function App() {
   const positiveFeedback = totalFeedback
     ? Math.round((feedback.good / totalFeedback) * 100)
     : 0;
-  //oluşturduğumuz bileşenleri render ediyoruz
+  //olusturduğumuz bilesenleri render ediyoruz
   return (
     <div className={css.container}>
       <Description />

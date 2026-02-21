@@ -1,7 +1,7 @@
 import css from './Options.module.css';
 
-// options bileþeni içine 3 buton ekledik ve her butona týklandýðýnda
-// onLeaveFeedback fonksiyonunu çaðýrarak ilgili feedback türünü güncelliyoruz
+//options bileseni kullanÄ±cÄ±ya feedback seceneklerini sunar 
+// ve feedback verilerini gÃ¼ncellemek icin fonksiyonlarÄ± alÄ±r
 
 export default function Options({ onLeaveFeedback, onReset, totalFeedback }) {
   return (
