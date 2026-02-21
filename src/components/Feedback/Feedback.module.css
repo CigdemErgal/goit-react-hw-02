@@ -1,0 +1,15 @@
+.box {
+  width: fit-content;
+  min-width: 250px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #f2bb72;
+  background-color: #fffaf3;
+  display: grid;
+  gap: 10px;
+}
+
+.box p {
+  font-size: 19px;
+  color: #2d3748;
+}

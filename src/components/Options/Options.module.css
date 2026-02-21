@@ -1,0 +1,26 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid #9aa6b2;
+  background-color: #f7f9fc;
+  color: #1f2a37;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+
+.button:hover {
+  background-color: #ecf2ff;
+  border-color: #6f8fdb;
+}
+
+.button:active {
+  transform: translateY(1px);
+}

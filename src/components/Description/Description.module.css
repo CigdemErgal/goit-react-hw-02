@@ -1,0 +1,22 @@
+.box {
+  display: grid;
+  gap: 12px;
+}
+
+.box h1 {
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  color: #17324d;
+}
+
+.box p {
+  font-size: 28px;
+  color: #2f3d4d;
+}
+
+@media (max-width: 640px) {
+  .box p {
+    font-size: 18px;
+  }
+}
